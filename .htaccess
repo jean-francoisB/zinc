@@ -5,4 +5,4 @@ RewriteEngine On
     # Si ce dossier est chargé par un client,
     # redirigeons le automatiquement vers le dossier public
 
-    RewriteRule ^(.*)$public/index.php
+    RewriteRule ^(.*)$ public/index.php

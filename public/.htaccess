@@ -1,0 +1,16 @@
+# Activation de la réécriture du moteur du serveur Apache
+
+RewriteEngine On
+
+# Définition du dossier de l'index.php comme dossier racine
+ # lorsque l'on tente d'accéder a l'application via un navigateur
+    DirectoryIndex index.php 
+
+# Définition de la base 
+    RewriteBase /
+
+#  Si la requete se trouvant dans la barre url n'est ni un fichier ni un dossier 
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+# Chargeons l'index.php puis arretons l'execution du script
+    RewrireRule ^(.*)$ index.php [L]
