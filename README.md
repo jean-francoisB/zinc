@@ -23,3 +23,13 @@ Ouvrez le terminal de votre machine et executez les commandes suivantes :
     - composer create-project aziaha/dwwm nom_du_projet
     - cd nom_du_projet
     - composer serve
+
+## En cas de clonage de ce repository
+
+Ouvrez le terminal de votre machine et executez les commandes suivantes
+
+    -git clone link https://github.com/jean-francoisB/zinc.git
+    -cd zinc
+    -composer install
+    -Créer le fichier .env è la racine du dossier "zinc" en s'inspirant du .env.example
+    -Démarrer le serveur grâce a la commande : php -S localhost:8000 -d display_errors=1 -t public

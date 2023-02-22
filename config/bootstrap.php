@@ -38,4 +38,4 @@ $dotenv->load();
 
 $container = require __DIR__ . "/di/container.php";
 
-dd($container->get(Request::class));
+// dd($container->get(Request::class));

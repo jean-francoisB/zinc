@@ -1,3 +1,9 @@
 <?php
+    // on déclenche une temporisation
+    ob_start();
+    require __DIR__ . "/page.php";
 
-    echo "page de test";
+    $content = ob_get_clean();
+
+    var_dump($content);
+    die();

@@ -12,7 +12,7 @@ interface RouterInterface
      * @param array $controllers
      * @return void
      */
-    public function addRoutes(array $controllers): void;
+    public function addRoutes(array $controllers = []): void;
 
     /**
      * Cette méthode du routeur lui permet de s'executer et de retourner
@@ -21,4 +21,13 @@ interface RouterInterface
      * @return array|null
      */
     public function run(): ?array;
+
+
+    /**
+     * Cette méthode du routeur permet de retourner l'information censée etre 
+     * au niveau de la barre d'urlassociée a cette route
+     *
+     * @return string
+     */
+    public function generatePath(string $route_name, ?array $parameters =[]): string;
 }

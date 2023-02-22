@@ -24,7 +24,7 @@ require __DIR__ . "/../config/bootstrap.php";
 
 
 // Création d'une nouvelle instance du noyau de l'application
-$kernel = new Kernel();
+$kernel = new Kernel($container);
 
 
 // Demander au noyau de soumettre la requete et de recupérer la reponse correspondante
